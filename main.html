@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCRIPTADOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Overpass:wght@100;500;900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+
+    <video id="video_bg" autoplay muted loop src="video_BG.mp4"> </video>
+
+
+    <main>
+        <div class="container">
+            <div class="caja">
+
+
+                <div class="display">
+                    <textarea name="resultado" id="textodesencriptado" cols="30" rows="10"></textarea>
+                    <!--aqui se muestra el texto encriptado o desencriptado-->
+                </div>
+
+
+            </div>
+
+
+            <div class="caja2">
+                <div class="logo">
+                    <a href="https://www.aluracursos.com/?gclid=Cj0KCQjwyLGjBhDKARIsAFRNgW_Ttz0imNV_fCGkxh-4uiFfY1ZDO8t3WuyukqzyWMZRO9ep1mOpxVcaApjfEALw_wcB"><img class="imagen" src="unnamed.png" alt=""></a>
+                </div>
+                <div class="texto">
+                    <input type="text" id="textoencriptado"> <!--aqui se escribe el texto-->
+                </div>
+                
+                <div class="botones">
+                    <button id="botonencriptado"> Encriptar </button>
+                    <button id="botondesencriptado"> Desencriptar </button>
+                    <button id="botoncopiar"> Copiar</button>.
+                </div>
+            </div>
+        </div>
+        <script>
+            var btn = document.querySelector("#botonencriptado");
+            btn.onclick = encriptar;
+
+            var btn2 = document.querySelector("#botondesencriptado");
+            btn2.onclick = desencriptar;
+
+            var btn3 = document.querySelector("#botoncopiar");
+            btn3.onclick = copiar; 
+        </script>
+
+
+    </main>
+
+
+
+</body>
+
+</html>
